@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>third day | Hexo</title>
+  <title>fourth day | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="tomcat**目录结构详解** 打开tomcat的解压之后的目录可以看到如下的目录结构： 1**、bin**： bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。可以把命令配置在环境变量里边 startup 用来启动tomcat  shutdown 用来关闭tomcat  修改catalina可以设置">
+  <meta name="description" content="jsp**的执行流程** 翻译阶段    当Web容器接收到JSP请求时，首先会对JSP文件进行翻译，将编写好的JSP文件通过JSP容器转换成可识别的Java源代码。 编译阶段 ​    将Java源文件编译成可执行的字节码文件 执行阶段    经过翻译和编译两个阶段，生成了可执行的二进制字节码文件，此时进入执行阶段。当执行结束后，得到处理请求的结果，把生成的结果页面返回到浏览器客户端显示。 2.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="third day">
-<meta property="og:url" content="http://yoursite.com/2019/12/01/third-day/index.html">
+<meta property="og:title" content="fourth day">
+<meta property="og:url" content="http://yoursite.com/2019/12/01/fourth-day/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="tomcat**目录结构详解** 打开tomcat的解压之后的目录可以看到如下的目录结构： 1**、bin**： bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。可以把命令配置在环境变量里边 startup 用来启动tomcat  shutdown 用来关闭tomcat  修改catalina可以设置">
+<meta property="og:description" content="jsp**的执行流程** 翻译阶段    当Web容器接收到JSP请求时，首先会对JSP文件进行翻译，将编写好的JSP文件通过JSP容器转换成可识别的Java源代码。 编译阶段 ​    将Java源文件编译成可执行的字节码文件 执行阶段    经过翻译和编译两个阶段，生成了可执行的二进制字节码文件，此时进入执行阶段。当执行结束后，得到处理请求的结果，把生成的结果页面返回到浏览器客户端显示。 2.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-01T07:19:17.756Z">
+<meta property="og:updated_time" content="2019-12-01T07:36:53.943Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="third day">
-<meta name="twitter:description" content="tomcat**目录结构详解** 打开tomcat的解压之后的目录可以看到如下的目录结构： 1**、bin**： bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。可以把命令配置在环境变量里边 startup 用来启动tomcat  shutdown 用来关闭tomcat  修改catalina可以设置">
+<meta name="twitter:title" content="fourth day">
+<meta name="twitter:description" content="jsp**的执行流程** 翻译阶段    当Web容器接收到JSP请求时，首先会对JSP文件进行翻译，将编写好的JSP文件通过JSP容器转换成可识别的Java源代码。 编译阶段 ​    将Java源文件编译成可执行的字节码文件 执行阶段    经过翻译和编译两个阶段，生成了可执行的二进制字节码文件，此时进入执行阶段。当执行结束后，得到处理请求的结果，把生成的结果页面返回到浏览器客户端显示。 2.">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,61 +154,93 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-third-day" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-fourth-day" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      third day
+      fourth day
     </h1>
   
 
         
-        <a href="/2019/12/01/third-day/" class="archive-article-date">
-  	<time datetime="2019-12-01T07:18:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-01</time>
+        <a href="/2019/12/01/fourth-day/" class="archive-article-date">
+  	<time datetime="2019-12-01T07:35:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>tomcat**</strong>目录结构详解**</p>
-<p>打开tomcat的解压之后的目录可以看到如下的目录结构：</p>
-<p><strong>1**</strong>、bin<strong>**：</strong></p>
-<p>bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。可以把命令配置在环境变量里边</p>
-<p>startup 用来启动tomcat </p>
-<p>shutdown 用来关闭tomcat </p>
-<p>修改catalina可以设置tomcat的内存</p>
-<p><strong>2**</strong>、webapps<strong>**：</strong></p>
-<p>webapps目录用来存放应用程序，当tomcat启动时会去加载webapps目录下的应用程序。可以以文件夹、war包、jar包的形式发布应用。<br> 当然，你也可以把应用程序放置在磁盘的任意位置，在配置文件中映射好就行。 </p>
-<p><strong>3**</strong>、conf**</p>
-<p>conf目录主要是用来存放tomcat的一些配置文件。</p>
-<p>server.xml可以设置端口号、设置域名或IP、默认加载的项目、请求编码 </p>
-<p>web.xml可以设置tomcat支持的文件类型 </p>
-<p>context.xml可以用来配置数据源之类的 </p>
-<p>tomcat-users.xml用来配置管理tomcat的用户与权限</p>
-<p><strong>4**</strong>、lib:**</p>
-<p>lib目录主要用来存放tomcat运行需要加载的jar包。<br> 例如，像连接数据库的jdbc的包我们可以加入到lib目录中来。</p>
-<p><strong>5**</strong>、logs<strong>**：</strong></p>
-<p>logs目录用来存放tomcat在运行过程中产生的日志文件，非常重要的是在控制台输出的日志。（清空不会对tomcat运行带来影响） </p>
-<p>在windows环境中，控制台的输出日志在catalina.xxxx-xx-xx.log文件中 </p>
-<p>在linux环境中，控制台的输出日志在catalina.out文件中</p>
-<p><strong>6**</strong>、temp<strong>**：</strong></p>
-<p>temp目录用户存放tomcat在运行过程中产生的临时文件。（清空不会对tomcat运行带来影响</p>
-<p><strong>7**</strong>、work:**</p>
-<p>work</p>
-<p>目录用来存放</p>
-<p>tomcat</p>
-<p>在运行时的编译后文件，例如</p>
-<p>JSP</p>
-<p>编译后的文件。</p>
-<p>清空</p>
-<p>work</p>
-<p>目录，然后重启</p>
-<p>tomcat</p>
-<p>，可以达到清除缓存的作用。</p>
+        <p><strong>jsp**</strong>的执行流程**</p>
+<p><strong>翻译阶段</strong></p>
+<p>   当Web容器接收到JSP请求时，首先会对JSP文件进行翻译，将编写好的JSP文件通过JSP容器转换成可识别的Java源代码。</p>
+<p><strong>编译阶段</strong></p>
+<p>​    将Java源文件编译成可执行的字节码文件</p>
+<p><strong>执行阶段</strong></p>
+<p>   经过翻译和编译两个阶段，生成了可执行的二进制字节码文件，此时进入执行阶段。当执行结束后，得到处理请求的结果，把生成的结果页面返回到浏览器客户端显示。</p>
+<p><strong>2.4**</strong>、了解<strong><strong>Servlet</strong></strong>概念<strong><strong>,</strong></strong>创建<strong>**servlet</strong></p>
+<p><strong>Servlet**</strong>概念以及作用**</p>
+<p>Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。</p>
+<p>   用户在jsp页面上输入数据，可以提交给servlet做处理，java代码读到的数据，可以通过servlet交给jsp页面去展示。这在项目中就充当了，控制与中转的功能。</p>
+<p><strong>创建servlet</strong></p>
+<p>\1. 创建JavaEE项目</p>
+<p>\2. 定义一个类，实现Servlet接口</p>
+<p>\3. 实现接口中的抽象方法</p>
+<p>\4. 配置Servlet</p>
+<p>在web.xml中配置：</p>
+<!--配置Servlet -->
+
+<servlet>
+
+<p><servlet-name>ServletDemo1</servlet-name></p>
+<p><servlet-class>com.dzqc.web.servlet.ServletDemo1</servlet-class></p>
+</servlet>
+
+<servlet-mapping>
+
+<p><servlet-name>ServletDemo1</servlet-name></p>
+<p><url-pattern>/demo1</url-pattern></p>
+</servlet-mapping>
+
+<p><strong>2.5**</strong>、<strong><strong>servlet</strong></strong>执行原理**</p>
+<p>\1. 当服务器接受到客户端浏览器的请求后，会解析请求URL路径，获取访问的Servlet的资源路径</p>
+<p>\2. 查找web.xml文件，是否有对应的<url-pattern>标签体内容。</url-pattern></p>
+<p>\3. 如果有，则在找到对应的<servlet-class>全类名</servlet-class></p>
+<p>\4. tomcat会将字节码文件加载进内存，并且创建其对象</p>
+<p>\5. 调用其方法</p>
+<p><strong>2.6**</strong>、<strong><strong>servlet</strong></strong>生命周期**</p>
+<p>\1. 被创建：执行init方法，只执行一次</p>
+<p>\2. 提供服务：执行service方法，执行多次，servelt核心方法</p>
+<p>\3. 被销毁：执行destroy方法，只执行一次</p>
+<p><strong>2.7**</strong>、<strong><strong>servlet</strong></strong>体系结构**</p>
+<p>Servlet有一个子类为GenericServlet，GenericServlet又有一个子类为HttpServlet，在创建servlet时，可以实现Servlet接口，也可以继承GenericServlet类。但在项目中创建Servlet的方式为，继承HttpServlet类。</p>
+<p><strong>2.7**</strong>、理解<strong><strong>HTTP</strong></strong>协议及<strong><strong>HTTP</strong></strong>请求的结构（请求行，头，体）**</p>
+<p>我们已经掌握了如何创建Servlet,但Servlet的真正作用为处理用于的请求，以及对用户的请求做响应，那么我们就要知道会发送哪几种请求，要想理解请求，就要先知道Http协议与Http请求结构</p>
+<p><strong>HTTP**</strong>协议概念**</p>
+<p>Hyper Text Transfer Protocol 超文本传输协议，定义了，客户端和服务器端通信时，发送数据的格式</p>
+<p><strong>特点：</strong></p>
+<p>\1. 基于TCP/IP的高级协议</p>
+<p>\2. 默认端口号:80</p>
+<p>\3. 基于请求/响应模型的:一次请求对应一次响应</p>
+<p>\4. 无状态的：每次请求之间相互独立，不能交互数据</p>
+<p>历史版本：</p>
+<p>1.0：每一次请求响应都会建立新的连接</p>
+<p>1.1：复用连接</p>
+<p><strong>HTTP**</strong>协议的请求方法，请求头，请求体**</p>
+<p><strong>Http**</strong>协议请求方法：**</p>
+<p>HTTP/1.1协议中共定义了八种方法（也叫“动作”）来以不同方式操作指定的资源。但最常用的两种请求方法为，get请求与post请求</p>
+<p><strong>get**</strong>请求与post<strong>**请求的区别：</strong></p>
+<p>get请求：不安全，会把运载的数据展示在url中，携带数据量比较小</p>
+<p>Post请求：安全，携带数据量比较大，比如上传文件，下载文件，肯定要用post请求</p>
+<p><strong>Http**</strong>协议请求头：**</p>
+<p>请求头的主要作用为：客户端浏览器告诉服务器一些信息</p>
+<p>1、浏览器告诉服务器，我访问你使用的浏览器版本信息</p>
+<p>2、告诉服务器，我(当前请求)从哪里来？</p>
+<p><strong>Http**</strong>协议请求体：**</p>
+<p>封装POST请求消息的请求参数的，换句话说请求体里放的是要提交给服务器的内容，例如账户名、密码。</p>
 
       
 
@@ -288,7 +320,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/01/third-day/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/01/fourth-day/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -302,18 +334,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/01/fourth-day/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          fourth day
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/12/01/second-day/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">two day</div>
+    <a href="/2019/12/01/third-day/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">third day</div>
       <i class="icon-circle-right"></i>
     </a>
   
